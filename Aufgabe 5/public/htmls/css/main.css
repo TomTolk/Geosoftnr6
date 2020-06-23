@@ -1,0 +1,45 @@
+/**
+ * GeoSoft 1
+ * Assignment 5
+ *
+ * @file Some basic style customizations for our site.
+ *
+ * @author Sven O. Pagel 396258
+ * @author Tom Tolksdorf 420326
+ */
+
+html, body {
+    height: 100%;
+}
+
+.fill-height {
+    margin-top: 1rem;
+    min-height: 100%;
+    height: auto !important; /* cross-browser */
+    height: 100%; /* cross-browser */
+}
+
+body {
+    padding-top: 50px;
+}
+
+#resizable {
+    height: 40rem;
+    border-right: 3px solid lightgrey;
+    min-width: 36rem !important;
+}
+
+#resizable > div {
+    background: none;
+}
+
+
+/* Toolbar */
+div.toolbar {
+    margin-top: 0.5rem;
+    margin-bottom: 5px;
+}
+
+div.toolbar p {
+    margin-bottom: 0px;
+}
