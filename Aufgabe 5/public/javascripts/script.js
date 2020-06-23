@@ -61,7 +61,7 @@ function refresh() {
   let positionGeoJSON = document.getElementById("pointSelect").value;
   try {
     console.log(positionGeoJSON)
-    positionGeoJSON = JSON.parse(positionGeoJSON); 
+    positionGeoJSON = JSON.parse(positionGeoJSON);
 
     //check validity of the geoJSON. it can only be a point
     if (geoJSON.isValidGeoJSONPoint(positionGeoJSON)) {
@@ -747,3 +747,21 @@ const mainMapInterface = new MapInterface(
   }
 );
 
+// Needed a bussoplist but did not really work for me.....
+//Creation of heatmap
+// create array of heatPoints
+
+//var heatPointlist = [];
+// fill it with all the busstops
+//for (var i = 0; i < busstopliste.length; i++){
+//  heatPointlist[i] = [busstopliste[i].coordinates[1],sortedbusstoplist[i].coordinates[0],1]
+//}
+// create new Layer on map with heatpoints
+//var heats = L.heatLayer(heatPointlist, {radius:50});
+// group osm and heat into one layer
+//var osmHeat = L.layerGroup([osm, heats]);
+
+// add layer control
+//var overlayMap = {"Heatmap": osmHeat, "Basemap": osm};
+//L.control.layers(overlayMap).addTo(map);
+//}
